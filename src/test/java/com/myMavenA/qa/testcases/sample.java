@@ -8,13 +8,14 @@ public class sample {
 	WebDriver driver;
 @Test
 public void start() {
-	System.out.println("Hello");
-	System.setProperty("webdriver.chrome.driver","C:\\Users\\Krishnakumar.M\\Downloads\\chromedriver_win32\\chromedriver.exe"); 
+	System.out.println("Hello"+System.getProperty("user.dir"));
+	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\chromedriver.exe"); 
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://www.flipkart.com/");
 	String title=driver.getTitle();
 	System.out.println(title);
 	driver.close();
+	
 }
 }
