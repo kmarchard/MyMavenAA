@@ -9,7 +9,7 @@ public class sample {
 @Test
 public void start() {
 	System.out.println("Hello"+System.getProperty("user.dir"));
-	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver"); 
+	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver1"); 
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://www.flipkart.com/");
